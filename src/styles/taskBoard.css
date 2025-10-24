@@ -1,0 +1,20 @@
+/* TaskBoard styles */
+
+.taskboard__list {
+  list-style: none;
+  padding: 0;
+}
+
+.taskboard__create {
+  margin: 8px 0 12px;
+}
+
+/* TODO 12: (CSS) 완료된 task(.task-done) 의 스타일을 개선하세요.
+   요구사항 예시:
+   - 회색 텍스트 색상
+   - 취소선(line-through)
+   - 아이템 왼쪽에 연한 체크 마크 배경 또는 아이콘 느낌
+*/
+.task-done {
+  /* 구현하세요. */
+}
