@@ -34,7 +34,7 @@
 - [x] TODO 10 (리팩토링) — src/components/TaskBoard.tsx: 진행률 계산을 순수 함수로 추출 (예: src/utils/progress.ts)
 - [x] TODO 11 (로직개선) — src/components/TaskBoard.tsx: task 생성 시 trim/중복 방지 로직 추가
 - [x] TODO 12 (CSS) — src/styles/taskBoard.css: .task-done 스타일 개선 (회색, 취소선 등)
-- [ ] TODO 13 (접근성) — src/components/TaskBoard.tsx: 입력 필드에 aria-* 속성 추가
+- [x] TODO 13 (접근성) — src/components/TaskBoard.tsx: 입력 필드에 aria-* 속성 추가
 - [ ] TODO 14 (CSS/UX) — src/components/ProgressiveImage.tsx: small→large 페이드 전환 효과
 
 추가 팁:
