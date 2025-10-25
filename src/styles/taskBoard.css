@@ -17,4 +17,10 @@
 */
 .task-done {
   /* 구현하세요. */
+  color: gray;
+  text-decoration: line-through;
+}
+
+.task-done::after {
+  content: " ✔️"
 }
