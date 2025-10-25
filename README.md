@@ -25,10 +25,10 @@
 - [x] TODO 01 (기초) — src/utils/collection.ts: pluckTitles 구현
 - [x] TODO 02 (기초) — src/utils/collection.ts: highPriorityFirst 구현
 - [x] TODO 03 (기초) — src/utils/collection.ts: groupByDone 구현
-- [ ] TODO 04 (기초+TS) — src/utils/debounce.ts: createDebounced 구현 ({ call, cancel, flush })
-- [ ] TODO 05 (TS) — src/components/ProjectList.tsx: onSelect 시그니처를 더 안전한 타입으로 개선
-- [ ] TODO 06 (중급) — src/hooks/useDebouncedValue.ts: debounce 값 반환 훅 구현
-- [ ] TODO 07 (중급) — src/api/mock/index.ts: getDashboard 를 Promise.all 로 구현
+- [x] TODO 04 (기초+TS) — src/utils/debounce.ts: createDebounced 구현 ({ call, cancel, flush })
+- [x] TODO 05 (TS) — src/components/ProjectList.tsx: onSelect 시그니처를 더 안전한 타입으로 개선
+- [x] TODO 06 (중급) — src/hooks/useDebouncedValue.ts: debounce 값 반환 훅 구현
+- [x] TODO 07 (중급) — src/api/mock/index.ts: getDashboard 를 Promise.all 로 구현
 - [ ] TODO 08 (lodash debounce) — src/components/SearchUser.tsx: 입력 디바운스 적용 및 cancel 처리
 - [ ] TODO 09 (중급) — src/hooks/useProgressiveImage.ts: progressiveLoad 연동 훅 구현
 - [x] TODO 10 (리팩토링) — src/components/TaskBoard.tsx: 진행률 계산을 순수 함수로 추출 (예: src/utils/progress.ts)
