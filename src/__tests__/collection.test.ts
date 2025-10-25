@@ -1,6 +1,7 @@
 import { describe, expect, test } from "vitest";
 import {
   countDone,
+  groupByDone,
   highPriorityFirst,
   pluckTitles,
   type SimpleTask,
@@ -33,5 +34,15 @@ describe("utils/collection", () => {
       { id: "1", title: "A", done: false, priority: "low" },
     ]);
   });
-  test.todo("TODO 03: groupByDone 구현");
+  test("TODO 03: groupByDone 구현", () => {
+    const result = groupByDone(sample);
+
+    expect(result).toEqual({
+      true: [{ id: "2", title: "B", done: true, priority: "high" }],
+      false: [
+        { id: "3", title: "C", done: false, priority: "medium" },
+        { id: "1", title: "A", done: false, priority: "low" },
+      ],
+    });
+  });
 });

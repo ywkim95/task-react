@@ -22,9 +22,9 @@
 각 TODO 옆의 파일을 열고 주석 내용을 따라 구현하세요. (`src/__tests__` 아래 test 를 작성하면서 진행하셔도 됩니다)
 
 - [x] TODO 00 Fork 후 로컬에서 `npm install` 및 README.md 파일을 읽고 이해
-- [ ] TODO 01 (기초) — src/utils/collection.ts: pluckTitles 구현
-- [ ] TODO 02 (기초) — src/utils/collection.ts: highPriorityFirst 구현
-- [ ] TODO 03 (기초) — src/utils/collection.ts: groupByDone 구현
+- [x] TODO 01 (기초) — src/utils/collection.ts: pluckTitles 구현
+- [x] TODO 02 (기초) — src/utils/collection.ts: highPriorityFirst 구현
+- [x] TODO 03 (기초) — src/utils/collection.ts: groupByDone 구현
 - [ ] TODO 04 (기초+TS) — src/utils/debounce.ts: createDebounced 구현 ({ call, cancel, flush })
 - [ ] TODO 05 (TS) — src/components/ProjectList.tsx: onSelect 시그니처를 더 안전한 타입으로 개선
 - [ ] TODO 06 (중급) — src/hooks/useDebouncedValue.ts: debounce 값 반환 훅 구현
