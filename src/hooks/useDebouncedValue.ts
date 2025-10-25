@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from 'react'
-import { createDebounced } from '../utils/debounce'
+import { useEffect, useMemo, useState } from "react";
+import { createDebounced } from "../utils/debounce";
 
 /**
  * 사용자의 입력값을 debounce 해서 노이즈를 줄이는 훅
@@ -11,10 +11,22 @@ import { createDebounced } from '../utils/debounce'
 //  - cleanup 시에는 debounce cancel 이 호출되어야 합니다.
 //  - 타입은 제네릭<T> 으로 유지하세요.
 export function useDebouncedValue<T>(value: T, wait = 300) {
-  const [debounced, setDebounced] = useState<T>(value)
+  const [debounced, setDebounced] = useState<T>(value);
 
   // 구현하세요.
   // 힌트: useMemo 로 debouncer 를 만들고, useEffect 로 value 변화를 구독하세요.
+  const debouncer = useMemo(
+    () => createDebounced((val: T) => setDebounced(val), wait),
+    [wait]
+  );
 
-  return debounced
+  useEffect(() => {
+    debouncer.call(value);
+
+    return () => {
+      debouncer.cancel();
+    };
+  }, [value, debouncer]);
+
+  return debounced;
 }
