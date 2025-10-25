@@ -1,7 +1,7 @@
 /**
  * Debounce helper around lodash.debounce with better TypeScript.
  */
-import debounce from 'lodash/debounce'
+import debounce from "lodash/debounce";
 
 // TODO 04: (기초+TS) 주어진 함수 fn 을 debounce 해서 반환하는 createDebounced 를 구현하세요.
 // 요구사항:
@@ -15,10 +15,10 @@ export function createDebounced<Args extends any[]>(
   wait = 300
 ) {
   // 구현하세요.
-  const noop = (..._args: Args) => {}
+  const debounceFn = debounce(fn, wait);
   return {
-    call: noop,
-    cancel: () => {},
-    flush: () => {},
-  }
+    call: debounceFn,
+    cancel: () => debounceFn.cancel,
+    flush: () => debounceFn.flush,
+  };
 }
