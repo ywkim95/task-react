@@ -31,7 +31,7 @@
 - [ ] TODO 07 (중급) — src/api/mock/index.ts: getDashboard 를 Promise.all 로 구현
 - [ ] TODO 08 (lodash debounce) — src/components/SearchUser.tsx: 입력 디바운스 적용 및 cancel 처리
 - [ ] TODO 09 (중급) — src/hooks/useProgressiveImage.ts: progressiveLoad 연동 훅 구현
-- [ ] TODO 10 (리팩토링) — src/components/TaskBoard.tsx: 진행률 계산을 순수 함수로 추출 (예: src/utils/progress.ts)
+- [x] TODO 10 (리팩토링) — src/components/TaskBoard.tsx: 진행률 계산을 순수 함수로 추출 (예: src/utils/progress.ts)
 - [ ] TODO 11 (로직개선) — src/components/TaskBoard.tsx: task 생성 시 trim/중복 방지 로직 추가
 - [ ] TODO 12 (CSS) — src/styles/taskBoard.css: .task-done 스타일 개선 (회색, 취소선 등)
 - [ ] TODO 13 (접근성) — src/components/TaskBoard.tsx: 입력 필드에 aria-* 속성 추가
