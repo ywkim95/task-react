@@ -7,6 +7,7 @@ import {
 } from "../api/mock";
 import "../styles/taskBoard.css";
 import { calcProgress } from "../utils/progress";
+import _ from "lodash";
 
 export type TaskBoardProps = {
   projectId?: string;
@@ -48,6 +49,13 @@ export function TaskBoard({ projectId }: TaskBoardProps) {
     if (!projectId) return;
     // TODO 11: (로직개선) title 을 trim 하고, 빈 문자열이면 생성하지 않도록 하세요.
     // 추가 요구: 같은 제목의 task 가 이미 있는 경우 생성하지 않도록 방지하세요. (lodash 사용 가능)
+    if (!title.trim()) return;
+
+    const isExist = _.find(tasks, function (task) {
+      return task.title === title;
+    });
+    if (isExist) return;
+
     await createTask(projectId, title);
     setTitle("");
     refresh();
