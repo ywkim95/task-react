@@ -21,7 +21,7 @@
 ## 문제 목록
 각 TODO 옆의 파일을 열고 주석 내용을 따라 구현하세요. (`src/__tests__` 아래 test 를 작성하면서 진행하셔도 됩니다)
 
-- [ ] TODO 00 Fork 후 로컬에서 `npm install` 및 README.md 파일을 읽고 이해
+- [x] TODO 00 Fork 후 로컬에서 `npm install` 및 README.md 파일을 읽고 이해
 - [ ] TODO 01 (기초) — src/utils/collection.ts: pluckTitles 구현
 - [ ] TODO 02 (기초) — src/utils/collection.ts: highPriorityFirst 구현
 - [ ] TODO 03 (기초) — src/utils/collection.ts: groupByDone 구현
