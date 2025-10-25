@@ -1,10 +1,15 @@
 import { describe, expect, test } from "vitest";
-import { countDone, pluckTitles, type SimpleTask } from "../utils/collection";
+import {
+  countDone,
+  highPriorityFirst,
+  pluckTitles,
+  type SimpleTask,
+} from "../utils/collection";
 
 const sample: SimpleTask[] = [
-  { id: "1", title: "A", done: false },
-  { id: "2", title: "B", done: true },
-  { id: "3", title: "C", done: false },
+  { id: "1", title: "A", done: false, priority: "low" },
+  { id: "2", title: "B", done: true, priority: "high" },
+  { id: "3", title: "C", done: false, priority: "medium" },
 ];
 
 describe("utils/collection", () => {
@@ -19,6 +24,14 @@ describe("utils/collection", () => {
     expect(result).toEqual(["A", "B", "C"]);
   });
 
-  test.todo("TODO 02: highPriorityFirst 구현");
+  test("TODO 02: highPriorityFirst 구현", () => {
+    const result = highPriorityFirst(sample);
+
+    expect(result).toEqual([
+      { id: "2", title: "B", done: true, priority: "high" },
+      { id: "3", title: "C", done: false, priority: "medium" },
+      { id: "1", title: "A", done: false, priority: "low" },
+    ]);
+  });
   test.todo("TODO 03: groupByDone 구현");
 });
