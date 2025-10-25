@@ -29,7 +29,7 @@
 - [x] TODO 05 (TS) — src/components/ProjectList.tsx: onSelect 시그니처를 더 안전한 타입으로 개선
 - [x] TODO 06 (중급) — src/hooks/useDebouncedValue.ts: debounce 값 반환 훅 구현
 - [x] TODO 07 (중급) — src/api/mock/index.ts: getDashboard 를 Promise.all 로 구현
-- [ ] TODO 08 (lodash debounce) — src/components/SearchUser.tsx: 입력 디바운스 적용 및 cancel 처리
+- [x] TODO 08 (lodash debounce) — src/components/SearchUser.tsx: 입력 디바운스 적용 및 cancel 처리
 - [ ] TODO 09 (중급) — src/hooks/useProgressiveImage.ts: progressiveLoad 연동 훅 구현
 - [x] TODO 10 (리팩토링) — src/components/TaskBoard.tsx: 진행률 계산을 순수 함수로 추출 (예: src/utils/progress.ts)
 - [x] TODO 11 (로직개선) — src/components/TaskBoard.tsx: task 생성 시 trim/중복 방지 로직 추가
